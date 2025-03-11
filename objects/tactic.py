@@ -1,7 +1,5 @@
 from stix2 import CustomObject, properties, ExternalReference
 
-import objects.marking_definition
-from objects import identity, marking_definition
 
 valid_tactics = ["plan-strategy", "plan-objectives", "microtarget", "develop-content",
                  "select-channels-and-affordances", "conduct-pump-priming", "deliver-content",
