@@ -36,12 +36,8 @@ def generate_disarm_stix():
     stix_objects = [item for sublist in stix_objects for item in sublist]
     disarm_bundle = bundle.make_stix_bundle(stix_objects)
     helpers.file.clean_output_dir()
-    print('Writing files')
     helpers.file.write_files(stix_objects)
-    print('Wrote files')
-    print('Writing bundle')
     helpers.file.write_bundle(disarm_bundle, "DISARM")
-    print('Wrote bundle')
 
 
 if __name__ == "__main__":
